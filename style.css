@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    font-size: 1.5rem;
+    background-image:url(images/bg-mobile.svg );
+    background-repeat: no-repeat;
+    color:white;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 40rem;
+    width: 95%;
+    padding:2rem 0;
+    margin:auto;
+}
+.container>*{
+    width: 90%;
+    margin: auto;
+}
+.image{
+    margin: 4rem auto;
+}
+.image_img{
+    width:95%;
+}
+.icon_img{
+    width:40%;
+}
+.title{
+margin-bottom: 1rem;
+font-size: 2.5rem;
+text-align: center;
+font-weight: 600;
+}
+.para{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+.btn{
+    padding: 1.25rem 2rem;
+    width: 60%;
+    margin: auto;
+    display: block;
+    border-radius: 2rem;
+    color:var(--Violet) ;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover{
+    background-color:var(--Soft-Magenta);
+color:white;
+}
+.icons{
+    margin:5.5rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.icn{
+    width: 28px;
+    height: 28px;
+    fill:white;
+}
+.icn+.icn{
+    margin-left: 1rem;
+}
+.icn:hover{
+    fill: var(--Soft-Magenta);
+}
+@media (min-width:800px){
+    body{
+        background-image: url(images/bg-desktop.svg);
+    }
+    .flex{
+        display:flex;
+        flex-basis: 100%;
+        align-items: stretch;
+        justify-content: stretch;
+       
+    }
+    .container{
+        max-width: 1440px;
+        padding: 2rem;
+    }
+    .title{
+        text-align: left;
+        font-size: 3rem;
+    }
+    .txt{
+        margin: 0%;
+        margin-bottom: 2rem;
+        padding:13rem 2rem 2rem 5rem ;
+        position: relative;
+        max-width: 60rem;
+    }
+    .image_img{
+        width:100%;
+    }
+    .para{
+        font-size: 2rem;
+        text-align: left;
+    }
+    .btn{
+        margin:0 0 auto 0 ;
+        width:30%;
+    }
+    .icons{
+        position: absolute;
+        right: 0;
+        bottom: 3rem;
+
+    }
+}
